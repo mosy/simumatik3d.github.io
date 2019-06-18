@@ -1,0 +1,9 @@
+https://youtu.be/DWyrEvKd5_M
+
+A system with two conveyors separated by a door.
+
+<h4>System description:</h4>
+<p>The conveyors are commanded with motor contactors using output signals <em>Conv1MotorFwd</em> and <em>Conv2MotorFwd</em>. One sensor is placed on the first conveyor so dropped boxes are directly detected and two sensors are placed before and after the door. The sensors are connected to <em>Sensor1</em>, <em>Sensor2</em> and <em>Sensor3</em> PLC inputs respectively.</p>
+<p>The door in between the conveyors is commanded with a reversing contactor. <em>"DoorMotorFwd"</em> and <em>"DoorMotorRev"</em> PLC outputs are connected to the contactor to open and close the door respectively. The door has two sensors connected to <em>SensorClose</em> and <em>SensorOpen</em> inputs to know when the door is completely closed and open. A Light beacon is places on the side of the door connected to output "Light".</p>
+<h4>Workflow:</h4>
+<p>Once a box is dropped the first conveyor runs forward until a box is detected by the sensor before the door. Then the door should open to avoid collision and the box continues to the end of the second conveyor. Once there, the door is closed and the box can be removed. During the time the door is not closed, the light should be blinking (0.5s On/0.5s Off).</p>

@@ -1,0 +1,10 @@
+https://youtu.be/T3Q3Cq0MVjI
+
+A system with a turning conveyor which has three input conveyors and one output conveyor.
+
+<h4>System description</h4>
+<p>There are 5 conveyors, one of them (Conveyor 4), is also a turning conveyor. This means that it can rotate on its vertical axis [-90,90] degrees. Each conveyor has a motor commanded with a motor contactor to run it forward. The contactors are connected to outputs "<em>MotorControl1</em>" to "<em>MotorControl5</em>". Each conveyor has a sensor ("<em>Sensor1</em>" to "<em>Sensor5</em>") to detect when a box has reached the end of the conveyor.</p>
+<p>Conveyor 4 has an additional motor contactor to make the conveyor turn. "<em>TurnControlFwd</em>" and "<em>TurnControlRev"</em> PLC outputs are used for rotating the conveyor. When the conveyor is in its home position, it is aligned with Conveyor 1 and 5, and "<em>Sensor6</em>" is activated. Running the turning motor forward all the way, "<em>Sensor7</em>" is activated and the conveyor aligned with Conveyor 2. Running it reverse all the way, "<em>Sensor8</em>" is activated and the conveyor aligned with Conveyor 3.</p>
+<p>The system includes a panel with three buttons to drop a box on Conveyor 1, 2 or 3. When the box reaches the end of conveyor 5 will be automatically removed.</p>
+<h4>Workflow:</h4>
+<p>It is assumed that a box can be dropped just when the Conveyor 1, 2 and 3 are empty and stopped. The sequence starts when a box is dropped in Conveyor 1, 2 or 3 (using a button from the panel) which is automatically detected by the sensor. The box should be moved to Conveyor 4 rotating it or not, and finally to Conveyor 5. When the box is removed from Conveyor 5 a new box can be loaded to Conveyor 4.</p>

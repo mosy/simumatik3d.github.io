@@ -1,0 +1,10 @@
+https://youtu.be/R1sFPBiAfeQ
+
+A system where boxes can be sorted in different order.
+
+<h4 style="font-size: 11px;">System description</h4>
+<p style="text-align: justify;">There are 4 conveyors and 1 pneumatic cylinder in the system. Conveyor 1 to 3 can deliver boxes of different colors to conveyor 4. From conveyor 4 the boxes are dropped into a container. The gate of the container can be closed using the pneumatic cylinder.</p>
+<p style="text-align: justify;">Each conveyor has a motor commanded with a motor contactor which is connected to the outputs&nbsp;<em>&ldquo;MotorControl1&rdquo;</em>&nbsp;to&nbsp;<em>&ldquo;MotorControl4&rdquo;</em>. All conveyors have a sensor at the end and are connected to the inputs&nbsp;<em>&ldquo;Sensor1&rdquo;</em>&nbsp;to&nbsp;<em>&ldquo;Sensor4&rdquo;</em>. The pneumatic cylinder is a single acting cylinder and it can be extended using the output&nbsp;<em>"ValveControl"</em>. When extended (gate closed), the input&nbsp;<em>"Sensor5"</em>&nbsp;is activated.</p>
+<p style="text-align: justify;">Three output signals can be used to drop boxes of different colors:&nbsp;<em>"DropBlue"</em>,&nbsp;<em>"DropGreen"</em>&nbsp;and&nbsp;<em>"DropRed"</em>.&nbsp;The system includes a panel with a button connected to the input&nbsp;<em>"Start"</em>.</p>
+<h4 style="font-size: 11px;">Workflow:</h4>
+<p style="text-align: justify;">The sequence starts when the button is pressed in the panel. Three boxes must be dropped in the conveyors and packed in the container in a specific order: green, b<span style="line-height: 20.9px;">lue&nbsp;</span>and finally, red. When all the three boxes are in the proper order in the container, the gate can be opened to release the pack. At this point, the sequence can be restarted using the button.</p>

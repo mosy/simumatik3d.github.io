@@ -1,0 +1,9 @@
+https://youtu.be/ucA8HL1Fzy4?list=PLlaeyxqFKfKOusGn_dh_L19g0w6hChgDf
+
+A system where a Scara Robot sorts different size boxes.
+
+<h4 style="font-size: 11px;">System description</h4>
+<p style="text-align: justify;">The system includes a Scara Robot and 4 conveyors. The conveyors are equiped with a motor contactor and two photoelectric sensors, one at the begining and one at the end. The robot is placed in the middle.</p>
+<p>The Scara Robot has 4 axis: axis 1, 2 and 4 are rotational and axis 3 is translational. Each servojoint is commanded using PLC Outputs (REAL), the rotationals in degrees and the translational in mm. The robot is equiped with a laser sensor to measure the distance to the boxes, providing the value to the PLC in mm (INT). An additional PLC output (BOOL) is used to control the product locker object to allow the robot to pick boxes.</p>
+<h4 style="font-size: 11px;">Workflow:</h4>
+<p style="text-align: justify;">New boxes are dropped on conveyor 1 and moved forward to the robot. The robot will measure the box and pick it. Depending on the size it will deliver the box to a different conveyor: green boxes to conveyor2, yellow boxes to conveyor 3 and orange boxes to conveyor 4. Once a box is placed at the begining of a conveyor, it is moved forward to the end, to be removed.</p>

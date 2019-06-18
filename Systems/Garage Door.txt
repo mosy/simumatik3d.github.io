@@ -1,9 +1,0 @@
-https://youtu.be/cFdsSW457To
-
-A simple garage door project with a button.
-
-<h4>System description:</h4>
-<p>A motor is connected to the door and commanded with a reversing contactor.&nbsp;<em>"MotorFwd"</em>&nbsp;and&nbsp;<em>"MotorRev"</em>&nbsp;PLC outputs are connected to the contactor to open and close the door respectively. The door has two sensors connected to &ldquo;SensorClose&rdquo; and &ldquo;SensorOpen&rdquo; inputs to know when the door is completely closed and open.</p>
-<p>There is a pushbutton on the panel connected to&nbsp;<em>&ldquo;Button&rdquo;</em>&nbsp;PLC input and a light beacon connected to PLC output&nbsp;<em>&ldquo;Light&rdquo;</em>.</p>
-<h4>Workflow:</h4>
-<p>When the button is pressed the door should open. Once open the beacon light is on for 5 seconds, then it blinks (T=0,5s) for another 5 extra seconds, and after that the door should close.</p>

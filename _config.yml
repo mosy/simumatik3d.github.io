@@ -32,6 +32,7 @@ plugins:
 
 include:
   - _images
+  - _files
 
 
 # Exclude from processing.

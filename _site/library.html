@@ -53,6 +53,10 @@
         line-height: 1.9em;
     }
 
+    p:link {
+        text-decoration: none;
+    }
+
     td {
         padding: 0;
     }
@@ -147,6 +151,33 @@
         .header-right {
             float: none;
         }
+    }
+
+    .black_overlay {
+        display: none;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+    }
+
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: auto;
+        padding: 30px;
+        background-color: white;
+        z-index: 1002;
+        overflow: auto;
     }
 </style>
 
@@ -350,7 +381,7 @@
                             2 Sensor Proximity With Housing
                     </p>
                     <p><img src="_images/Sensor Proximity With Housing 2.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -369,7 +400,7 @@
                         Sensor Proximity With Housing
                     </p>
                     <p><img src="_images/Sensor Proximity With Housing.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -388,7 +419,7 @@
                         Sensor Retro Reflective
                     </p>
                     <p><img src="_images/Sensor Retro Reflective.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -408,7 +439,7 @@
                         Servo Bilateral Restrictor
                     </p>
                     <p><img src="_images/Servo Bilateral Restrictor 1.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -433,7 +464,7 @@
                         Servo Pusher
                     </p>
                     <p><img src="_images/Servo Pusher 1.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -452,7 +483,7 @@
                         Servo Pusher Rotational
                     </p>
                     <p><img src="_images/Servo Pusher 2.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
@@ -471,7 +502,7 @@
                         Servo Vertical Picker
                     </p>
                     <p><img src="_images/Servo Vertical Picker 1.jpg"
-                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;"" />
+                            style="display: block; margin-left: auto; margin-right: auto; width: 250px; height: 150px;" />
                     </p>
                     <button
                         style="width: 170px; background-color: #7ab317; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; font-weight: bold; margin-top: 5px; cursor: pointer;">
